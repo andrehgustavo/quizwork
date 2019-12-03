@@ -27,7 +27,7 @@ public class AnswerDAO extends WithDAO {
 		SQLiteDatabase db = dao.getWritableDatabase();
 
 		ContentValues values = new ContentValues();
-		values.put(QUIZ_ANSWER, quizAnswer.getQuiz().getId());
+		values.put(QUIZ_ANSWER_QUIZ, quizAnswer.getQuiz().getId());
 		values.put(QUIZ_ANSWER_CREATOR, quizAnswer.getCreator().getId());
 		values.put(QUIZ_ANSWER_SCORE, quizAnswer.getScore());
 		quizAnswer.setId(db.insert(QUIZ_ANSWER_TABLE, null, values));
@@ -48,26 +48,30 @@ public class AnswerDAO extends WithDAO {
 	}
 
 	public long countByQuiz(Quiz quiz) {
-		return DatabaseUtils.queryNumEntries(dao.getReadableDatabase(), QUIZ_ANSWER_TABLE, QUIZ_ANSWER + "=" + quiz.getId());
+		return DatabaseUtils.queryNumEntries(dao.getReadableDatabase(), QUIZ_ANSWER_TABLE, QUIZ_ANSWER_QUIZ + "=" + quiz.getId());
 	}
 
 	public List<QuizAnswer> findByQuiz(Quiz quiz) {
 		SQLiteDatabase db = dao.getReadableDatabase();
 		String sql = "SELECT * FROM "
 				+ QUIZ_ANSWER_TABLE + "," + USER_TABLE + " WHERE "
-				+ QUIZ_ANSWER_CREATOR + "=" + USER_ID + " AND " + QUIZ_ANSWER + "= ?"
+				+ QUIZ_ANSWER_CREATOR + "=" + USER_ID + " AND " + QUIZ_ANSWER_QUIZ + "= ?"
 				+ " ORDER BY " + QUIZ_ANSWER_SCORE + " DESC";
 		Cursor c = db.rawQuery(sql, new String[]{String.valueOf(quiz.getId())});
 
 		List<QuizAnswer> result = new ArrayList<>();
+		QuizAnswer quizAnswer;
 		while (c.moveToNext()) {
-			result.add(new QuizAnswer(
-					c.getLong(c.getColumnIndex(QUIZ_ANSWER_ID )),
+			quizAnswer = new QuizAnswer(
+					c.getLong(c.getColumnIndex(QUIZ_ANSWER_ID)),
+					c.getLong(c.getColumnIndex(QUIZ_ANSWER_QUIZ)),
 					new User(
 							c.getLong(c.getColumnIndex(USER_ID)),
 							c.getString(c.getColumnIndex(USER_NAME)),
-							null),
-					c.getInt(c.getColumnIndex(QUIZ_ANSWER_SCORE))));
+							null));
+			if (!c.isNull(c.getColumnIndex(QUIZ_ANSWER_SCORE)))
+				quizAnswer.setScore(c.getInt(c.getColumnIndex(QUIZ_ANSWER_SCORE)));
+			result.add(quizAnswer);
 		}
 		c.close();
 		return result;

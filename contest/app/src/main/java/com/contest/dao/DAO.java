@@ -42,6 +42,7 @@ public class DAO extends SQLiteOpenHelper {
 	static final String QUESTION_TEXT = "question_text";
 	static final String QUESTION_QUIZ = "question_id_quiz";
 	static final String QUESTION_OPTION = "question_id_option";
+	static final String QUESTION_SCORE = "question_score";
 
 	// Table Option
 	static final String OPTION_TABLE = "option";
@@ -52,7 +53,7 @@ public class DAO extends SQLiteOpenHelper {
 	// Table QuizAnswer
 	static final String QUIZ_ANSWER_TABLE = "quiz_answer";
 	static final String QUIZ_ANSWER_ID = "id_answer";
-	static final String QUIZ_ANSWER = "id_quiz_answer";
+	static final String QUIZ_ANSWER_QUIZ = "id_quiz_answer";
 	static final String QUIZ_ANSWER_CREATOR = "quiz_answer_id_user";
 	static final String QUIZ_ANSWER_SCORE = "quiz_answer_score";
 
@@ -103,7 +104,8 @@ public class DAO extends SQLiteOpenHelper {
 				+ QUESTION_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
 				+ QUESTION_TEXT + " TEXT,"
 				+ QUESTION_QUIZ + " INTEGER,"
-				+ QUESTION_OPTION + " INTEGER"
+				+ QUESTION_OPTION + " INTEGER,"
+				+ QUESTION_SCORE + " INTEGER"
 				+ ")");
 
 		db.execSQL("CREATE TABLE " + OPTION_TABLE + "("
@@ -114,7 +116,7 @@ public class DAO extends SQLiteOpenHelper {
 
 		db.execSQL("CREATE TABLE " + QUIZ_ANSWER_TABLE + "("
 				+ QUIZ_ANSWER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-				+ QUIZ_ANSWER + " INTEGER,"
+				+ QUIZ_ANSWER_QUIZ + " INTEGER,"
 				+ QUIZ_ANSWER_CREATOR + " INTEGER,"
 				+ QUIZ_ANSWER_SCORE + " INTEGER"
 				+ ")");

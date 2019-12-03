@@ -17,11 +17,11 @@ public class QuizAnswer implements Serializable {
 		this.questionAnswers = new ArrayList<>();
 	}
 
-	public QuizAnswer(long id, User creator, Integer score) {
+	public QuizAnswer(long id, long idQuiz, User creator) {
 		this.id = id;
+		this.quiz = new Quiz();
+		this.quiz.setId(idQuiz);
 		this.creator = creator;
-		this.score = score;
-		this.questionAnswers = new ArrayList<>();
 	}
 
 	public long getId() {
@@ -73,6 +73,6 @@ public class QuizAnswer implements Serializable {
 
 	@Override
 	public String toString() {
-		return creator.getName() + " (" + score + ")";
+		return creator.getName() + " (" + (score == null ? "still to correct" : score) + ")";
 	}
 }

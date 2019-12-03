@@ -25,16 +25,18 @@ public class QuestionDAO extends WithDAO {
 		values.put(QUESTION_QUIZ, question.getQuiz().getId());
 		question.setId(db.insert(QUESTION_TABLE, null, values));
 
-		for (Option op : ((ObjectiveQuestion) question).getOptions()) {
-			values.clear();
-			values.put(OPTION_TEXT, op.getText());
-			values.put(OPTION_QUESTION, question.getId());
-			op.setId(db.insert(OPTION_TABLE, null, values));
-		}
+		if (question instanceof ObjectiveQuestion) {
+			for (Option op : ((ObjectiveQuestion) question).getOptions()) {
+				values.clear();
+				values.put(OPTION_TEXT, op.getText());
+				values.put(OPTION_QUESTION, question.getId());
+				op.setId(db.insert(OPTION_TABLE, null, values));
+			}
 
-		values.clear();
-		values.put(QUESTION_OPTION, question.getCorrect().getId());
-		db.update(QUESTION_TABLE, values, QUESTION_ID + "=" + question.getId(), null);
+			values.clear();
+			values.put(QUESTION_OPTION, question.getCorrect().getId());
+			db.update(QUESTION_TABLE, values, QUESTION_ID + "=" + question.getId(), null);
+		}
 		return question;
 	}
 
