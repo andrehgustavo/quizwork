@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Configuration;
 import android.text.InputType;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,7 +26,6 @@ import java.util.List;
 public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickListener {
 	private List<Question> questions = new ArrayList<>();
 	private LayoutInflater inflater;
-	private TextView correctAnswerView;
 
 	CreateQuestionsAdapter(Context context) {
 		this.inflater = LayoutInflater.from(context);
@@ -44,7 +42,9 @@ public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickL
 		View remove = v.findViewById(R.id.create_question_remove);
 		remove.setOnClickListener(this);
 		remove.setTag(i);
-		correctAnswerView = v.findViewById(R.id.create_question_answer);
+		Question question = questions.get(i);
+		if (question.getCorrect() != null)
+			((TextView) v.findViewById(R.id.create_question_answer)).setText(((NumericAnswer) question.getCorrect()).getNumber().toString());
 
 		return v;
 	}
@@ -74,17 +74,16 @@ public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickL
 				.setView(input)
 				.setPositiveButton("Add", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
-						String text = (input.getText().toString());
+						String text = input.getText().toString().trim();
+						if (text.isEmpty())
+							return;
 
 						if (question == null) {
 							questions.add(new MathQuestion(text));
 							Toast.makeText(inflater.getContext(), "Question added", Toast.LENGTH_LONG).show();
 						} else {
-							NumericAnswer numericAnswer = new NumericAnswer(Double.valueOf(text), question);
-							((MathQuestion) question).setCorrectAnswer((numericAnswer));
-							correctAnswerView.setText(text);
-							question.setCorrect(((MathQuestion) question).getCorrectAnswer());
-							numericAnswer.getQuestion().setCorrect(numericAnswer);
+							question.setCorrect(new NumericAnswer(Double.valueOf(text), question));
+							notifyDataSetChanged();
 							Toast.makeText(inflater.getContext(), "NumericAnswer added", Toast.LENGTH_LONG).show();
 						}
 					}

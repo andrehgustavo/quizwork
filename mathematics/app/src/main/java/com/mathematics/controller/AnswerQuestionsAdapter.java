@@ -17,10 +17,9 @@ import com.quizwork.User;
 import com.mathematics.R;
 import com.mathematics.model.NumericAnswer;
 
-public class AnswerQuestionsAdapter extends BaseAdapter {
+public class AnswerQuestionsAdapter extends BaseAdapter implements View.OnFocusChangeListener {
 	private QuizAnswer quizAnswer;
 	private LayoutInflater inflater;
-	private QuestionAnswer questionAnswer;
 
 	AnswerQuestionsAdapter(Context context, Quiz quiz, User user) {
 		this.inflater = LayoutInflater.from(context);
@@ -34,22 +33,28 @@ public class AnswerQuestionsAdapter extends BaseAdapter {
 	@Override
 	@SuppressLint("ViewHolder")
 	public View getView(int i, View view, ViewGroup viewGroup) {
-		questionAnswer = quizAnswer.getQuestionAnswers().get(i);
 		ViewGroup v = (ViewGroup) inflater.inflate(R.layout.item_answer_question, viewGroup, false);
-		final EditText userAnswer = v.findViewById(R.id.answer_question_input);
-		userAnswer.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-			@Override
-			public void onFocusChange(View v, boolean hasFocus) {
-				if (hasFocus) {
-					try {
-						questionAnswer.setAnswer(
-								new NumericAnswer(Double.valueOf(userAnswer.getText().toString()), questionAnswer.getQuestion()));
-					} catch (Exception ignored) {}
-				}
-			}
-		});
+		EditText userAnswer = v.findViewById(R.id.answer_question_input);
+		userAnswer.setOnFocusChangeListener(this);
+		QuestionAnswer questionAnswer = quizAnswer.getQuestionAnswers().get(i);
+		userAnswer.setTag(questionAnswer);
+		if (questionAnswer.getAnswer() != null)
+			userAnswer.setText(((NumericAnswer) questionAnswer.getAnswer()).getNumber().toString());
 		((TextView) v.findViewById(R.id.answer_question_text)).setText(questionAnswer.getQuestion().getText());
 		return v;
+	}
+
+	@Override
+	public void onFocusChange(View v, boolean hasFocus) {
+		if (!hasFocus) {
+			QuestionAnswer questionAnswer = ((QuestionAnswer) v.getTag());
+			try {
+				questionAnswer.setAnswer(
+						new NumericAnswer(Double.valueOf(((EditText) v).getText().toString()), questionAnswer.getQuestion()));
+			} catch (Exception ignored) {
+				questionAnswer.setAnswer(null);
+			}
+		}
 	}
 
 	@Override

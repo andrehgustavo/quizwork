@@ -61,7 +61,7 @@ public class DAO extends SQLiteOpenHelper {
 	static final String QUESTION_ANSWER_ID = "id_question_answer";
 	static final String QUESTION_ANSWER_ANSWER = "question_answer_id_answer";
 	static final String QUESTION_ANSWER_QUESTION = "question_answer_id_question";
-	static final String QUESTION_ANSWER_NUMERIC_ANSWER = "question_answer_numeric_answer";
+	static final String QUESTION_ANSWER_NUMERIC_ANSWER = "question_answer_id_numeric_answer";
 	static final String QUESTION_ANSWER_SCORE = "question_answer_score";
 
 	private DAO(Context context) {

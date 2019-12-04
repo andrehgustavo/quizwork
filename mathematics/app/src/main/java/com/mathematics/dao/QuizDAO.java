@@ -68,7 +68,7 @@ public class QuizDAO extends WithDAO {
 		Cursor c = db.rawQuery(sql, new String[]{code});
 
 		Quiz result = null;
-		MathQuestion lastQuestion = new MathQuestion();
+		MathQuestion lastQuestion;
 		while (c.moveToNext()) {
 			if (result == null) {
 				result = new Quiz(
@@ -81,14 +81,11 @@ public class QuizDAO extends WithDAO {
 						new Category(c.getLong(c.getColumnIndex(QUIZ_CATEGORY))),
 						new User(c.getLong(c.getColumnIndex(QUIZ_USER))));
 			}
-			if (lastQuestion.getId() != c.getLong(c.getColumnIndex(QUESTION_ID))) {
-				lastQuestion = new MathQuestion(
-						c.getLong(c.getColumnIndex(QUESTION_ID)),
-						c.getString(c.getColumnIndex(QUESTION_TEXT)),
-						new NumericAnswer(c.getLong(c.getColumnIndex(QUESTION_NUMERIC_ANSWER)), c.getDouble(c.getColumnIndex(QUESTION_NUMERIC_ANSWER))));
-				result.getQuestions().add(lastQuestion);
-			}
-			lastQuestion.setCorrectAnswer((new NumericAnswer(c.getLong(c.getColumnIndex(NUMERIC_ANSWER_ID)), c.getDouble(c.getColumnIndex(NUMERIC_ANSWER_NUMBER)))));
+			lastQuestion = new MathQuestion(
+					c.getLong(c.getColumnIndex(QUESTION_ID)),
+					c.getString(c.getColumnIndex(QUESTION_TEXT)),
+					new NumericAnswer(c.getLong(c.getColumnIndex(NUMERIC_ANSWER_ID)), c.getDouble(c.getColumnIndex(NUMERIC_ANSWER_NUMBER))));
+			result.getQuestions().add(lastQuestion);
 		}
 		c.close();
 		return result;
@@ -103,7 +100,7 @@ public class QuizDAO extends WithDAO {
 
 		ArrayList<Quiz> result = new ArrayList<>();
 		Quiz lastQuiz = new Quiz();
-		MathQuestion lastQuestion = new MathQuestion();
+		MathQuestion lastQuestion;
 		while (c.moveToNext()) {
 			if (lastQuiz.getId() != c.getLong(c.getColumnIndex(QUIZ_ID))) {
 				lastQuiz = new Quiz(
@@ -117,14 +114,11 @@ public class QuizDAO extends WithDAO {
 						new User(c.getLong(c.getColumnIndex(QUIZ_USER))));
 				result.add(lastQuiz);
 			}
-			if (lastQuestion.getId() != c.getLong(c.getColumnIndex(QUESTION_ID))) {
-				lastQuestion = new MathQuestion(
-						c.getLong(c.getColumnIndex(QUESTION_ID)),
-						c.getString(c.getColumnIndex(QUESTION_TEXT)),
-						new NumericAnswer(c.getLong(c.getColumnIndex(QUESTION_NUMERIC_ANSWER)), c.getDouble(c.getColumnIndex(QUESTION_NUMERIC_ANSWER))));
-				lastQuiz.getQuestions().add(lastQuestion);
-			}
-			lastQuestion.setCorrectAnswer((new NumericAnswer(c.getLong(c.getColumnIndex(NUMERIC_ANSWER_ID)), c.getDouble(c.getColumnIndex(NUMERIC_ANSWER_NUMBER)))));
+			lastQuestion = new MathQuestion(
+					c.getLong(c.getColumnIndex(QUESTION_ID)),
+					c.getString(c.getColumnIndex(QUESTION_TEXT)),
+					new NumericAnswer(c.getLong(c.getColumnIndex(NUMERIC_ANSWER_ID)), c.getDouble(c.getColumnIndex(NUMERIC_ANSWER_NUMBER))));
+			lastQuiz.getQuestions().add(lastQuestion);
 		}
 		c.close();
 		return result;

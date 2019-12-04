@@ -16,18 +16,14 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="UTF-8" />
+      <charset value="windows-1252" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0">
-        <schema name="main" object-types="column, dataset trigger, index, constraint, table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="f926a702-fed7-4317-a989-cc0062a5f5d0">
@@ -35,11 +31,7 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0" object-ref="schemas/main/tables/question_answer" />
-      <object connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0" object-ref="schemas/main/tables/numeric_answer" />
-      <object connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0" object-ref="schemas/main/tables/question" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="f926a702-fed7-4317-a989-cc0062a5f5d0" />
@@ -288,6 +280,8 @@
           <content-type name="HTML" enabled="true" />
           <content-type name="XHTML" enabled="true" />
           <content-type name="Java" enabled="true" />
+          <content-type name="SQL" enabled="true" />
+          <content-type name="PL/SQL" enabled="true" />
           <content-type name="Groovy" enabled="true" />
           <content-type name="AIDL" enabled="true" />
           <content-type name="YAML" enabled="true" />
