@@ -10,8 +10,6 @@ import java.util.ArrayList;
 public class ObjectiveQuestion extends Question implements Serializable {
 	private ArrayList<Option> options;
 
-	public ObjectiveQuestion() {}
-
 	public ObjectiveQuestion(String text) {
 		this.text = text;
 		this.options = new ArrayList<>();

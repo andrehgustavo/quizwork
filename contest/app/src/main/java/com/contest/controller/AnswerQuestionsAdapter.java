@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckedTextView;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.contest.R;
@@ -19,7 +20,7 @@ import com.quizwork.Question;
 import com.quizwork.Quiz;
 import com.quizwork.User;
 
-public class AnswerQuestionsAdapter extends BaseAdapter implements View.OnClickListener {
+public class AnswerQuestionsAdapter extends BaseAdapter implements View.OnClickListener, View.OnFocusChangeListener {
 	private QuizAnswer quizAnswer;
 	private LayoutInflater inflater;
 	private int itemBackgroundResource;
@@ -41,14 +42,23 @@ public class AnswerQuestionsAdapter extends BaseAdapter implements View.OnClickL
 		ViewGroup v = (ViewGroup) inflater.inflate(R.layout.item_answer_question, viewGroup, false);
 		QuestionAnswer questionAnswer = quizAnswer.getQuestionAnswers().get(i);
 		((TextView) v.findViewById(R.id.answer_question_text)).setText(questionAnswer.getQuestion().getText());
-		CheckedTextView item;
-		for (Option op : ((ObjectiveQuestion) questionAnswer.getQuestion()).getOptions()) {
-			item = (CheckedTextView) inflater.inflate(android.R.layout.simple_list_item_single_choice, viewGroup, false);
-			item.setText(op.getText());
-			item.setBackgroundResource(itemBackgroundResource);
-			item.setTag(new Object[]{questionAnswer, op, v});
-			item.setOnClickListener(this);
-			v.addView(item);
+		if (questionAnswer.getQuestion() instanceof ObjectiveQuestion) {
+			for (Option op : ((ObjectiveQuestion) questionAnswer.getQuestion()).getOptions()) {
+				CheckedTextView item = (CheckedTextView) inflater.inflate(android.R.layout.simple_list_item_single_choice, viewGroup, false);
+				item.setText(op.getText());
+				item.setBackgroundResource(itemBackgroundResource);
+				item.setTag(new Object[]{questionAnswer, op, v});
+				item.setOnClickListener(this);
+				v.addView(item);
+			}
+		} else {
+			EditText input = new EditText(inflater.getContext());
+			input.setLines(3);
+			input.setTag(questionAnswer);
+			input.setOnFocusChangeListener(this);
+			if (questionAnswer.getAnswer() != null)
+				input.setText(((Option) questionAnswer.getAnswer()).getText());
+			v.addView(input);
 		}
 		return v;
 	}
@@ -81,5 +91,14 @@ public class AnswerQuestionsAdapter extends BaseAdapter implements View.OnClickL
 			((CheckedTextView) v.getChildAt(i)).setChecked(false);
 		}
 		((CheckedTextView) view).setChecked(true);
+	}
+
+	@Override
+	public void onFocusChange(View view, boolean hasFocus) {
+		if (!hasFocus) {
+			QuestionAnswer questionAnswer = (QuestionAnswer) view.getTag();
+			questionAnswer.setAnswer(
+					new Option(((EditText) view).getText().toString(), questionAnswer.getQuestion()));
+		}
 	}
 }

@@ -5,9 +5,11 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.quizwork.Category;
 import com.contest.model.ObjectiveQuestion;
 import com.contest.model.Option;
+import com.contest.model.SubjectiveQuestion;
+import com.quizwork.Category;
+import com.quizwork.Question;
 import com.quizwork.Quiz;
 import com.quizwork.User;
 
@@ -63,12 +65,13 @@ public class QuizDAO extends WithDAO {
 
 	public Quiz findByCode(String code) {
 		SQLiteDatabase db = dao.getReadableDatabase();
-		String sql = "SELECT * FROM " + QUIZ_TABLE + "," + QUESTION_TABLE + "," + OPTION_TABLE + " WHERE "
-				+ QUIZ_ID + "=" + QUESTION_QUIZ + " AND " + QUESTION_ID + "=" + OPTION_QUESTION + " AND " + QUIZ_CODE + "= ?";
+		String sql = "SELECT * FROM " + QUIZ_TABLE + " JOIN " + QUESTION_TABLE + " ON " + QUIZ_ID + "=" + QUESTION_QUIZ
+				+ " LEFT OUTER JOIN " + OPTION_TABLE + " ON " + QUESTION_ID + "=" + OPTION_QUESTION
+				+ " WHERE " + QUIZ_CODE + " = ?";
 		Cursor c = db.rawQuery(sql, new String[]{code});
 
 		Quiz result = null;
-		ObjectiveQuestion lastQuestion = new ObjectiveQuestion();
+		Question lastQuestion = new SubjectiveQuestion();
 		while (c.moveToNext()) {
 			if (result == null) {
 				result = new Quiz(
@@ -81,14 +84,23 @@ public class QuizDAO extends WithDAO {
 						new Category(c.getLong(c.getColumnIndex(QUIZ_CATEGORY))),
 						new User(c.getLong(c.getColumnIndex(QUIZ_USER))));
 			}
-			if (lastQuestion.getId() != c.getLong(c.getColumnIndex(QUESTION_ID))) {
-				lastQuestion = new ObjectiveQuestion(
+			if (c.isNull(c.getColumnIndex(OPTION_ID))) {
+				lastQuestion = new SubjectiveQuestion(
 						c.getLong(c.getColumnIndex(QUESTION_ID)),
-						c.getString(c.getColumnIndex(QUESTION_TEXT)),
-						new Option(c.getLong(c.getColumnIndex(QUESTION_OPTION)), null));
+						c.getString(c.getColumnIndex(QUESTION_TEXT)));
+				if (!c.isNull(c.getColumnIndex(QUESTION_SCORE)))
+					((SubjectiveQuestion) lastQuestion).setScore(c.getInt(c.getColumnIndex(QUESTION_SCORE)));
 				result.getQuestions().add(lastQuestion);
+			} else {
+				if (lastQuestion.getId() != c.getLong(c.getColumnIndex(QUESTION_ID))) {
+					lastQuestion = new ObjectiveQuestion(
+							c.getLong(c.getColumnIndex(QUESTION_ID)),
+							c.getString(c.getColumnIndex(QUESTION_TEXT)),
+							new Option(c.getLong(c.getColumnIndex(QUESTION_OPTION)), null));
+					result.getQuestions().add(lastQuestion);
+				}
+				((ObjectiveQuestion) lastQuestion).getOptions().add(new Option(c.getLong(c.getColumnIndex(OPTION_ID)), c.getString(c.getColumnIndex(OPTION_TEXT))));
 			}
-			lastQuestion.getOptions().add(new Option(c.getLong(c.getColumnIndex(OPTION_ID)), c.getString(c.getColumnIndex(OPTION_TEXT))));
 		}
 		c.close();
 		return result;
@@ -96,14 +108,14 @@ public class QuizDAO extends WithDAO {
 
 	public List<Quiz> findAllByName(String text) {
 		SQLiteDatabase db = dao.getReadableDatabase();
-		String sql = "SELECT * FROM " + QUIZ_TABLE + "," + QUESTION_TABLE + "," + OPTION_TABLE + " WHERE "
-				+ QUIZ_ID + "=" + QUESTION_QUIZ + " AND " + QUESTION_ID + "=" + OPTION_QUESTION
-				+ " AND " + QUIZ_OPEN + " == 1 AND " + QUIZ_NAME + " LIKE ?";
+		String sql = "SELECT * FROM " + QUIZ_TABLE + " JOIN " + QUESTION_TABLE + " ON " + QUIZ_ID + "=" + QUESTION_QUIZ
+				+ " LEFT OUTER JOIN " + OPTION_TABLE + " ON " + QUESTION_ID + "=" + OPTION_QUESTION
+				+ " WHERE " + QUIZ_OPEN + " == 1 AND " + QUIZ_NAME + " LIKE ?";
 		Cursor c = db.rawQuery(sql, new String[]{"%" + text + "%"});
 
 		ArrayList<Quiz> result = new ArrayList<>();
 		Quiz lastQuiz = new Quiz();
-		ObjectiveQuestion lastQuestion = new ObjectiveQuestion();
+		Question lastQuestion = new SubjectiveQuestion();
 		while (c.moveToNext()) {
 			if (lastQuiz.getId() != c.getLong(c.getColumnIndex(QUIZ_ID))) {
 				lastQuiz = new Quiz(
@@ -117,14 +129,23 @@ public class QuizDAO extends WithDAO {
 						new User(c.getLong(c.getColumnIndex(QUIZ_USER))));
 				result.add(lastQuiz);
 			}
-			if (lastQuestion.getId() != c.getLong(c.getColumnIndex(QUESTION_ID))) {
-				lastQuestion = new ObjectiveQuestion(
+			if (c.isNull(c.getColumnIndex(OPTION_ID))) {
+				lastQuestion = new SubjectiveQuestion(
 						c.getLong(c.getColumnIndex(QUESTION_ID)),
-						c.getString(c.getColumnIndex(QUESTION_TEXT)),
-						new Option(c.getLong(c.getColumnIndex(QUESTION_OPTION)), null));
+						c.getString(c.getColumnIndex(QUESTION_TEXT)));
+				if (!c.isNull(c.getColumnIndex(QUESTION_SCORE)))
+					((SubjectiveQuestion) lastQuestion).setScore(c.getInt(c.getColumnIndex(QUESTION_SCORE)));
 				lastQuiz.getQuestions().add(lastQuestion);
+			} else {
+				if (lastQuestion.getId() != c.getLong(c.getColumnIndex(QUESTION_ID))) {
+					lastQuestion = new ObjectiveQuestion(
+							c.getLong(c.getColumnIndex(QUESTION_ID)),
+							c.getString(c.getColumnIndex(QUESTION_TEXT)),
+							new Option(c.getLong(c.getColumnIndex(QUESTION_OPTION)), null));
+					lastQuiz.getQuestions().add(lastQuestion);
+				}
+				((ObjectiveQuestion) lastQuestion).getOptions().add(new Option(c.getLong(c.getColumnIndex(OPTION_ID)), c.getString(c.getColumnIndex(OPTION_TEXT))));
 			}
-			lastQuestion.getOptions().add(new Option(c.getLong(c.getColumnIndex(OPTION_ID)), c.getString(c.getColumnIndex(OPTION_TEXT))));
 		}
 		c.close();
 		return result;
