@@ -23,6 +23,6 @@ public class MathQuestion extends Question implements Serializable {
 	@Override
 	public void validate() throws ValidationException {
 		if (correct == null)
-			throw new ValidationException("You must select the Correct numericAnswer for each Question");
+			throw new ValidationException("You need answer all the questions.");
 	}
 }
