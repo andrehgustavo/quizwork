@@ -37,7 +37,7 @@ public class AnswerDAO extends WithDAO {
 			values.clear();
 			values.put(QUESTION_ANSWER_ANSWER, quizAnswer.getId());
 			values.put(QUESTION_ANSWER_QUESTION, aq.getQuestion().getId());
-			values.put(QUESTION_ANSWER_NUMERIC_ANSWER, ((NumericAnswer)aq.getAnswer()).getId());
+			values.put(QUESTION_ANSWER_NUMERIC_ANSWER, ((NumericAnswer)aq.getAnswer()).getNumber());
 			values.put(QUESTION_ANSWER_SCORE, aq.getScore());
 			aq.setId(db.insert(QUESTION_ANSWER_TABLE, null, values));
 		}

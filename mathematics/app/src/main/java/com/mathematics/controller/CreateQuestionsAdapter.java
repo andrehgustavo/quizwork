@@ -81,12 +81,10 @@ public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickL
 							Toast.makeText(inflater.getContext(), "Question added", Toast.LENGTH_LONG).show();
 						} else {
 							NumericAnswer numericAnswer = new NumericAnswer(Double.valueOf(text), question);
-							Log.d("Math", "NumericAnswer: " + numericAnswer);
 							((MathQuestion) question).setCorrectAnswer((numericAnswer));
 							correctAnswerView.setText(text);
 							question.setCorrect(((MathQuestion) question).getCorrectAnswer());
 							numericAnswer.getQuestion().setCorrect(numericAnswer);
-							Log.d("Math", "getCorrect: " + numericAnswer.getQuestion().getCorrect());
 							Toast.makeText(inflater.getContext(), "NumericAnswer added", Toast.LENGTH_LONG).show();
 						}
 					}

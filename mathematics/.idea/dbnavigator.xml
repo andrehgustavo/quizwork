@@ -24,34 +24,30 @@
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes>
-      <connection connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36">
-        <schema name="main" object-types="column, constraint, table, index, dataset trigger, view" />
+      <connection connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0">
+        <schema name="main" object-types="column, dataset trigger, index, constraint, table, view" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36">
+    <connection id="f926a702-fed7-4317-a989-cc0062a5f5d0">
       <console name="Connection" type="STANDARD" schema="main" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" object-ref="schemas/main/tables/numeric_answer" />
-      <object connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" object-ref="schemas/main/tables/question_answer" />
-      <object connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" object-ref="schemas/main/tables/sqlite_sequence" />
-      <object connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" object-ref="schemas/main/tables/question" />
-      <object connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" object-ref="schemas/main/tables/quiz_answer" />
+      <object connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0" object-ref="schemas/main/tables/question_answer" />
+      <object connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0" object-ref="schemas/main/tables/numeric_answer" />
+      <object connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0" object-ref="schemas/main/tables/question" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" />
+    <connection id="f926a702-fed7-4317-a989-cc0062a5f5d0" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" dataset="main.sqlite_sequence" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" dataset="main.question" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" dataset="main.numeric_answer" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" dataset="main.question_answer" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" dataset="main.quiz_answer" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0" dataset="main.question" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0" dataset="main.numeric_answer" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f926a702-fed7-4317-a989-cc0062a5f5d0" dataset="main.question_answer" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -76,7 +72,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="c2cd8f77-c29e-46c1-ab39-e71c61e10b36" active="true">
+      <connection id="f926a702-fed7-4317-a989-cc0062a5f5d0" active="true">
         <database>
           <name value="Connection" />
           <description value="" />

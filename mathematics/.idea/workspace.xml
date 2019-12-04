@@ -12,21 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f37de161-94e3-4b45-a8e5-22c34145686b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/AnswerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/AnswerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuestionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuestionDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuizDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuizDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java" afterDir="false" />
     </list>
@@ -39,7 +30,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="YT910R6BFP" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6P_API_28" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -49,166 +40,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/model/NumericAnswer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-              <folding>
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/AnswerDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/AnswerQuestionsAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/AnswerActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/QuestionAnswer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-              <folding>
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/Answer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-              <folding>
-                <element signature="e#180#181#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="db://c2cd8f77-c29e-46c1-ab39-e71c61e10b36/objects/schemas/main/tables/quiz_answer">
-          <provider selected="true" editor-type-id="1.DATA">
-            <state row-count="1" readonly="false">
-              <columns>
-                <column name="id_answer" position="0" visible="true" />
-                <column name="id_quiz_answer" position="1" visible="true" />
-                <column name="quiz_answer_id_user" position="2" visible="true" />
-                <column name="quiz_answer_score" position="3" visible="true" />
-              </columns>
-              <sorting />
-              <content-types />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="db://c2cd8f77-c29e-46c1-ab39-e71c61e10b36/objects/schemas/main/tables/question_answer">
-          <provider selected="true" editor-type-id="1.DATA">
-            <state row-count="1" readonly="false">
-              <columns>
-                <column name="id_question_answer" position="0" visible="true" />
-                <column name="question_answer_id_answer" position="1" visible="true" />
-                <column name="question_answer_id_question" position="2" visible="true" />
-                <column name="question_answer_id_numeric_answer" position="3" visible="true" />
-                <column name="question_answer_score" position="4" visible="true" />
-              </columns>
-              <sorting />
-              <content-types />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="db://c2cd8f77-c29e-46c1-ab39-e71c61e10b36/objects/schemas/main/tables/sqlite_sequence">
-          <provider selected="true" editor-type-id="1.DATA">
-            <state row-count="7" readonly="false">
-              <columns>
-                <column name="name" position="0" visible="true" />
-                <column name="seq" position="1" visible="true" />
-              </columns>
-              <sorting />
-              <content-types />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="db://c2cd8f77-c29e-46c1-ab39-e71c61e10b36/objects/schemas/main/tables/question">
-          <provider selected="true" editor-type-id="1.DATA">
-            <state row-count="2" readonly="false">
-              <columns>
-                <column name="id_question" position="0" visible="true" />
-                <column name="question_text" position="1" visible="true" />
-                <column name="question_id_quiz" position="2" visible="true" />
-                <column name="question_id_numeric_answer" position="3" visible="true" />
-              </columns>
-              <sorting />
-              <content-types />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/QuizAnswer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/Question.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -223,24 +54,123 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuestionDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="10" column="85" selection-start-line="10" selection-start-column="85" selection-end-line="10" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="db://f926a702-fed7-4317-a989-cc0062a5f5d0/objects/schemas/main/tables/question">
+          <provider selected="true" editor-type-id="1.DATA">
+            <state row-count="1" readonly="false">
+              <columns>
+                <column name="id_question" position="0" visible="true" />
+                <column name="question_text" position="1" visible="true" />
+                <column name="question_id_quiz" position="2" visible="true" />
+                <column name="question_id_numeric_answer" position="3" visible="true" />
+              </columns>
+              <sorting />
+              <content-types />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/QuizAnswer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="86" column="46" lean-forward="true" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
+            <state relative-caret-position="193">
+              <caret line="82" column="108" selection-start-line="82" selection-start-column="108" selection-end-line="82" selection-end-column="108" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2313#3094#0" expanded="true" />
-                <element signature="e#3093#3094#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuestionDAO.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/QuizReportActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="231">
+              <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/service/AnswerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="db://f926a702-fed7-4317-a989-cc0062a5f5d0/objects/schemas/main/tables/question_answer">
+          <provider selected="true" editor-type-id="1.DATA">
+            <state row-count="2" readonly="false">
+              <columns>
+                <column name="id_question_answer" position="0" visible="true" />
+                <column name="question_answer_id_answer" position="1" visible="true" />
+                <column name="question_answer_id_question" position="2" visible="true" />
+                <column name="question_answer_numeric_answer" position="3" visible="true" />
+                <column name="question_answer_score" position="4" visible="true" />
+              </columns>
+              <sorting />
+              <content-types />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="db://f926a702-fed7-4317-a989-cc0062a5f5d0/objects/schemas/main/tables/numeric_answer">
+          <provider selected="true" editor-type-id="1.DATA">
+            <state row-count="1" readonly="false">
+              <columns>
+                <column name="id_numeric_answer" position="0" visible="true" />
+                <column name="numeric_answer_number" position="1" visible="true" />
+                <column name="numeric_answer_id_question" position="2" visible="true" />
+              </columns>
+              <sorting />
+              <content-types />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/QuestionAnswer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+              <folding>
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#773#774#0" expanded="true" />
+                <element signature="e#800#801#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -248,17 +178,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuizDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2060">
-              <caret line="127" column="9" lean-forward="true" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
+            <state relative-caret-position="60">
+              <caret line="87" column="108" selection-start-line="87" selection-start-column="108" selection-end-line="87" selection-end-column="108" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="63" column="73" selection-start-line="63" selection-start-column="73" selection-end-line="63" selection-end-column="73" />
+            <state relative-caret-position="197">
+              <caret line="125" column="48" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/AnswerDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -275,6 +214,7 @@
       <find>itemBackgroundResource</find>
       <find>_number</find>
       <find>option</find>
+      <find>QUESTION_ANSWER_NUMERIC_ANSWER</find>
     </findStrings>
     <replaceStrings>
       <replace>text</replace>
@@ -316,18 +256,20 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestion.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_create_question.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/model/NumericAnswer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuizDAO.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/AnswerDAO.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/DAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/AnswerDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuestionDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuizDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-2" />
-    <option name="width" value="1280" />
-    <option name="height" value="1026" />
+    <option name="x" value="833" />
+    <option name="y" value="25" />
+    <option name="width" value="767" />
+    <option name="height" value="875" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -335,9 +277,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -369,15 +309,34 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="mathematics" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mathematics" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="mathematics" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mathematics" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="quizwork" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_6P_API_28" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-12-04T14:15:08.002Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_opened_file_path" value="$USER_HOME$/Área de Trabalho/db" />
@@ -484,7 +443,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.5010142" side_tool="true" weight="0.17484869" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4989858" visible="true" weight="0.22125085" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4989858" visible="true" weight="0.22125085" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -497,15 +456,15 @@
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.329235" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.4248634" />
-      <window_info anchor="bottom" id="Logcat" order="3" visible="true" weight="0.329235" />
+      <window_info anchor="bottom" id="Logcat" order="3" weight="0.32786885" />
       <window_info anchor="bottom" id="TODO" order="4" weight="0.329235" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32650274" />
-      <window_info anchor="bottom" id="Terminal" order="6" />
+      <window_info active="true" anchor="bottom" id="Find" order="5" visible="true" weight="0.32650274" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5003362" side_tool="true" weight="0.329235" />
       <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49966374" weight="0.32650274" />
       <window_info anchor="bottom" id="Android Profiler" order="9" weight="0.329235" />
-      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49966374" weight="0.329235" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.32952252" />
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49966374" weight="0.4385246" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.35507733" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -517,12 +476,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java</url>
-          <line>11</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsAdapter.java</url>
           <line>82</line>
           <properties />
@@ -532,250 +485,18 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="db://9eb3cecb-4c73-4a92-8c97-e1acb0263c30/objects/schemas/main/tables/quiz_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="3" readonly="false">
-          <columns>
-            <column name="id_answer" position="0" visible="true" />
-            <column name="id_quiz_answer" position="1" visible="true" />
-            <column name="quiz_answer_id_user" position="2" visible="true" />
-            <column name="quiz_answer_score" position="3" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://9eb3cecb-4c73-4a92-8c97-e1acb0263c30/objects/schemas/main/tables/category">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_category" position="0" visible="true" />
-            <column name="category_name" position="1" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://9eb3cecb-4c73-4a92-8c97-e1acb0263c30/objects/schemas/main/tables/user">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_user" position="0" visible="true" />
-            <column name="user_name" position="1" visible="true" />
-            <column name="email" position="2" visible="true" />
-            <column name="password" position="3" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://9eb3cecb-4c73-4a92-8c97-e1acb0263c30/objects/schemas/main/tables/sqlite_sequence">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="7" readonly="false">
-          <columns>
-            <column name="name" position="0" visible="true" />
-            <column name="seq" position="1" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://9eb3cecb-4c73-4a92-8c97-e1acb0263c30/objects/schemas/main/tables/android_metadata">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="locale" position="0" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://9eb3cecb-4c73-4a92-8c97-e1acb0263c30/objects/schemas/main/tables/question">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_question" position="0" visible="true" />
-            <column name="question_text" position="1" visible="true" />
-            <column name="question_id_quiz" position="2" visible="true" />
-            <column name="question_id_option" position="3" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://9eb3cecb-4c73-4a92-8c97-e1acb0263c30/objects/schemas/main/tables/numeric_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_numeric_answer" position="0" visible="true" />
-            <column name="numeric_answer_number" position="1" visible="true" />
-            <column name="numeric_answer_id_question" position="2" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://9eb3cecb-4c73-4a92-8c97-e1acb0263c30/objects/schemas/main/tables/question_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="3" readonly="false">
-          <columns>
-            <column name="id_question_answer" position="0" visible="true" />
-            <column name="question_answer_id_answer" position="1" visible="true" />
-            <column name="question_answer_id_question" position="2" visible="true" />
-            <column name="question_answer_id_option" position="3" visible="true" />
-            <column name="question_answer_score" position="4" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://8caad00f-1474-4649-a8f9-ffb86a5b1c53/objects/schemas/main/tables/question">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_question" position="0" visible="true" />
-            <column name="question_text" position="1" visible="true" />
-            <column name="question_id_quiz" position="2" visible="true" />
-            <column name="question_id_numeric_answer" position="3" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://8caad00f-1474-4649-a8f9-ffb86a5b1c53/objects/schemas/main/tables/numeric_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_numeric_answer" position="0" visible="true" />
-            <column name="numeric_answer_number" position="1" visible="true" />
-            <column name="numeric_answer_id_question" position="2" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://8caad00f-1474-4649-a8f9-ffb86a5b1c53/objects/schemas/main/tables/question_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="id_question_answer" position="0" visible="true" />
-            <column name="question_answer_id_answer" position="1" visible="true" />
-            <column name="question_answer_id_question" position="2" visible="true" />
-            <column name="question_answer_id_numeric_answer" position="3" visible="true" />
-            <column name="question_answer_score" position="4" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://20d0cb5b-9ef4-40c5-8607-f7620339e1d7/objects/schemas/main/tables/question_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="id_question_answer" position="0" visible="true" />
-            <column name="question_answer_id_answer" position="1" visible="true" />
-            <column name="question_answer_id_question" position="2" visible="true" />
-            <column name="question_answer_id_numeric_answer" position="3" visible="true" />
-            <column name="question_answer_score" position="4" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://20d0cb5b-9ef4-40c5-8607-f7620339e1d7/objects/schemas/main/tables/quiz_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="id_answer" position="0" visible="true" />
-            <column name="id_quiz_answer" position="1" visible="true" />
-            <column name="quiz_answer_id_user" position="2" visible="true" />
-            <column name="quiz_answer_score" position="3" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://20d0cb5b-9ef4-40c5-8607-f7620339e1d7/objects/schemas/main/tables/sqlite_sequence">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="name" position="0" visible="true" />
-            <column name="seq" position="1" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://20d0cb5b-9ef4-40c5-8607-f7620339e1d7/objects/schemas/main/tables/question">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="id_question" position="0" visible="true" />
-            <column name="question_text" position="1" visible="true" />
-            <column name="question_id_quiz" position="2" visible="true" />
-            <column name="question_id_numeric_answer" position="3" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://20d0cb5b-9ef4-40c5-8607-f7620339e1d7/objects/schemas/main/tables/numeric_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="id_numeric_answer" position="0" visible="true" />
-            <column name="numeric_answer_number" position="1" visible="true" />
-            <column name="numeric_answer_id_question" position="2" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://a3f0aed2-e12e-4423-acc4-45429c19b336/objects/schemas/main/tables/question">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_question" position="0" visible="true" />
-            <column name="question_text" position="1" visible="true" />
-            <column name="question_id_quiz" position="2" visible="true" />
-            <column name="question_id_numeric_answer" position="3" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://a3f0aed2-e12e-4423-acc4-45429c19b336/objects/schemas/main/tables/question_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_question_answer" position="0" visible="true" />
-            <column name="question_answer_id_answer" position="1" visible="true" />
-            <column name="question_answer_id_question" position="2" visible="true" />
-            <column name="question_answer_id_numeric_answer" position="3" visible="true" />
-            <column name="question_answer_score" position="4" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
+    <entry file="db://9eb3cecb-4c73-4a92-8c97-e1acb0263c30/objects/schemas/main/tables/numeric_answer" />
+    <entry file="db://9eb3cecb-4c73-4a92-8c97-e1acb0263c30/objects/schemas/main/tables/question_answer" />
+    <entry file="db://8caad00f-1474-4649-a8f9-ffb86a5b1c53/objects/schemas/main/tables/question" />
+    <entry file="db://8caad00f-1474-4649-a8f9-ffb86a5b1c53/objects/schemas/main/tables/numeric_answer" />
+    <entry file="db://8caad00f-1474-4649-a8f9-ffb86a5b1c53/objects/schemas/main/tables/question_answer" />
+    <entry file="db://20d0cb5b-9ef4-40c5-8607-f7620339e1d7/objects/schemas/main/tables/question_answer" />
+    <entry file="db://20d0cb5b-9ef4-40c5-8607-f7620339e1d7/objects/schemas/main/tables/quiz_answer" />
+    <entry file="db://20d0cb5b-9ef4-40c5-8607-f7620339e1d7/objects/schemas/main/tables/sqlite_sequence" />
+    <entry file="db://20d0cb5b-9ef4-40c5-8607-f7620339e1d7/objects/schemas/main/tables/question" />
+    <entry file="db://20d0cb5b-9ef4-40c5-8607-f7620339e1d7/objects/schemas/main/tables/numeric_answer" />
+    <entry file="db://a3f0aed2-e12e-4423-acc4-45429c19b336/objects/schemas/main/tables/question" />
+    <entry file="db://a3f0aed2-e12e-4423-acc4-45429c19b336/objects/schemas/main/tables/question_answer" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/Answer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -798,120 +519,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="db://4297eb4a-84be-4e62-863e-478c244c690a/consoles/Connection">
-      <provider selected="true" editor-type-id="0.CONSOLE">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://f77a534a-b8f6-4390-ac1e-4951a2ae2322/objects/schemas/main/tables/question_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_question_answer" position="0" visible="true" />
-            <column name="question_answer_id_answer" position="1" visible="true" />
-            <column name="question_answer_id_question" position="2" visible="true" />
-            <column name="question_answer_numeric_answer" position="3" visible="true" />
-            <column name="question_answer_score" position="4" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/QuizAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://67b3acd4-3290-4465-89cb-4963e80a4323/objects/schemas/main/tables/numeric_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_numeric_answer" position="0" visible="true" />
-            <column name="numeric_answer_number" position="1" visible="true" />
-            <column name="numeric_answer_id_question" position="2" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-          <folding>
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuestionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://67b3acd4-3290-4465-89cb-4963e80a4323/objects/schemas/main/tables/question">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_question" position="0" visible="true" />
-            <column name="question_text" position="1" visible="true" />
-            <column name="question_id_quiz" position="2" visible="true" />
-            <column name="question_id_numeric_answer" position="3" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://67b3acd4-3290-4465-89cb-4963e80a4323/objects/schemas/main/tables/question_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="2" readonly="false">
-          <columns>
-            <column name="id_question_answer" position="0" visible="true" />
-            <column name="question_answer_id_answer" position="1" visible="true" />
-            <column name="question_answer_id_question" position="2" visible="true" />
-            <column name="question_answer_numeric_answer" position="3" visible="true" />
-            <column name="question_answer_score" position="4" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/AnswerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuizDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2060">
-          <caret line="127" column="9" lean-forward="true" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/model/NumericAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="db://4297eb4a-84be-4e62-863e-478c244c690a/consoles/Connection" />
+    <entry file="db://f77a534a-b8f6-4390-ac1e-4951a2ae2322/objects/schemas/main/tables/question_answer" />
+    <entry file="db://67b3acd4-3290-4465-89cb-4963e80a4323/objects/schemas/main/tables/numeric_answer" />
+    <entry file="db://67b3acd4-3290-4465-89cb-4963e80a4323/objects/schemas/main/tables/question" />
+    <entry file="db://67b3acd4-3290-4465-89cb-4963e80a4323/objects/schemas/main/tables/question_answer" />
     <entry file="file://$USER_HOME$/Android/Sdk/sources/android-28/android/os/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -926,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/service/AnswerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-708">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/Quiz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -944,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/AnswerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -958,99 +556,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/QuestionAnswer.java">
+    <entry file="db://a0688c24-d4e6-4569-86b2-92ed1fb870db/objects/schemas/main/tables/numeric_answer" />
+    <entry file="db://a0688c24-d4e6-4569-86b2-92ed1fb870db/objects/schemas/main/tables/quiz" />
+    <entry file="db://a0688c24-d4e6-4569-86b2-92ed1fb870db/objects/schemas/main/tables/question" />
+    <entry file="db://a0688c24-d4e6-4569-86b2-92ed1fb870db/objects/schemas/main/tables/question_answer" />
+    <entry file="db://a0688c24-d4e6-4569-86b2-92ed1fb870db/objects/schemas/main/tables/quiz_answer" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/AnswerQuestionsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://a0688c24-d4e6-4569-86b2-92ed1fb870db/objects/schemas/main/tables/numeric_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="2" readonly="false">
-          <columns>
-            <column name="id_numeric_answer" position="0" visible="true" />
-            <column name="numeric_answer_number" position="1" visible="true" />
-            <column name="numeric_answer_id_question" position="2" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://a0688c24-d4e6-4569-86b2-92ed1fb870db/objects/schemas/main/tables/quiz">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="2" readonly="false">
-          <columns>
-            <column name="id_quiz" position="0" visible="true" />
-            <column name="quiz_name" position="1" visible="true" />
-            <column name="open" position="2" visible="true" />
-            <column name="code" position="3" visible="true" />
-            <column name="start_date" position="4" visible="true" />
-            <column name="end_date" position="5" visible="true" />
-            <column name="quiz_id_category" position="6" visible="true" />
-            <column name="quiz_id_user" position="7" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://a0688c24-d4e6-4569-86b2-92ed1fb870db/objects/schemas/main/tables/question">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="2" readonly="false">
-          <columns>
-            <column name="id_question" position="0" visible="true" />
-            <column name="question_text" position="1" visible="true" />
-            <column name="question_id_quiz" position="2" visible="true" />
-            <column name="question_id_numeric_answer" position="3" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://a0688c24-d4e6-4569-86b2-92ed1fb870db/objects/schemas/main/tables/question_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="id_question_answer" position="0" visible="true" />
-            <column name="question_answer_id_answer" position="1" visible="true" />
-            <column name="question_answer_id_question" position="2" visible="true" />
-            <column name="question_answer_id_numeric_answer" position="3" visible="true" />
-            <column name="question_answer_score" position="4" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://a0688c24-d4e6-4569-86b2-92ed1fb870db/objects/schemas/main/tables/quiz_answer">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="id_answer" position="0" visible="true" />
-            <column name="id_quiz_answer" position="1" visible="true" />
-            <column name="quiz_answer_id_user" position="2" visible="true" />
-            <column name="quiz_answer_score" position="3" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="294">
+          <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1094,6 +608,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://c2cd8f77-c29e-46c1-ab39-e71c61e10b36/objects/schemas/main/tables/numeric_answer">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="2" readonly="false">
+          <columns>
+            <column name="id_numeric_answer" position="0" visible="true" />
+            <column name="numeric_answer_number" position="1" visible="true" />
+            <column name="numeric_answer_id_question" position="2" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
     <entry file="db://c2cd8f77-c29e-46c1-ab39-e71c61e10b36/objects/schemas/main/tables/question_answer">
       <provider selected="true" editor-type-id="1.DATA">
         <state row-count="1" readonly="false">
@@ -1109,29 +643,163 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuestionDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="86" column="46" lean-forward="true" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2313#3094#0" expanded="true" />
-            <element signature="e#3093#3094#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/AnswerQuestionsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+        <state relative-caret-position="189">
+          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/DAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="63" column="73" selection-start-line="63" selection-start-column="73" selection-end-line="63" selection-end-column="73" />
+        <state relative-caret-position="197">
+          <caret line="125" column="48" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuizDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="87" column="108" selection-start-line="87" selection-start-column="108" selection-end-line="87" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/QuestionAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://edb13db1-4dea-4d39-8259-04eef56cc408/objects/schemas/main/tables/question_answer">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="0" readonly="false">
+          <columns>
+            <column name="id_question_answer" position="0" visible="true" />
+            <column name="question_answer_id_answer" position="1" visible="true" />
+            <column name="question_answer_id_question" position="2" visible="true" />
+            <column name="question_answer_id_option" position="3" visible="true" />
+            <column name="question_answer_score" position="4" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://f926a702-fed7-4317-a989-cc0062a5f5d0/objects/schemas/main/tables/question_answer">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="2" readonly="false">
+          <columns>
+            <column name="id_question_answer" position="0" visible="true" />
+            <column name="question_answer_id_answer" position="1" visible="true" />
+            <column name="question_answer_id_question" position="2" visible="true" />
+            <column name="question_answer_numeric_answer" position="3" visible="true" />
+            <column name="question_answer_score" position="4" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://f926a702-fed7-4317-a989-cc0062a5f5d0/objects/schemas/main/tables/numeric_answer">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="1" readonly="false">
+          <columns>
+            <column name="id_numeric_answer" position="0" visible="true" />
+            <column name="numeric_answer_number" position="1" visible="true" />
+            <column name="numeric_answer_id_question" position="2" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/QuizReportActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/AnswerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/QuizAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://f926a702-fed7-4317-a989-cc0062a5f5d0/objects/schemas/main/tables/question">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="1" readonly="false">
+          <columns>
+            <column name="id_question" position="0" visible="true" />
+            <column name="question_text" position="1" visible="true" />
+            <column name="question_id_quiz" position="2" visible="true" />
+            <column name="question_id_numeric_answer" position="3" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/model/NumericAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/service/AnswerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/quizwork/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding>
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="82" column="108" selection-start-line="82" selection-start-column="108" selection-end-line="82" selection-end-column="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="85" selection-start-line="10" selection-start-column="85" selection-end-line="10" selection-end-column="85" />
         </state>
       </provider>
     </entry>

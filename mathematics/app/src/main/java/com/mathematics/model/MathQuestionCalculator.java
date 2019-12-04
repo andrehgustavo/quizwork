@@ -9,8 +9,6 @@ import com.quizwork.ValidationException;
 public class MathQuestionCalculator implements QuestionCalculator {
 	@Override
 	public void calculate(QuestionAnswer questionAnswer) throws ValidationException {
-		Log.d("Math", "UserAnswer: " + ((NumericAnswer) questionAnswer.getAnswer()).getNumber());
-		Log.d("Math", "Correct: " + ((NumericAnswer)questionAnswer.getQuestion().getCorrect()).getNumber());
 		if (questionAnswer.getAnswer() == null)
 			throw new ValidationException("Question "
 					+ (questionAnswer.getQuizAnswer().getQuestionAnswers().indexOf(questionAnswer)+ 1)

@@ -61,7 +61,7 @@ public class DAO extends SQLiteOpenHelper {
 	static final String QUESTION_ANSWER_ID = "id_question_answer";
 	static final String QUESTION_ANSWER_ANSWER = "question_answer_id_answer";
 	static final String QUESTION_ANSWER_QUESTION = "question_answer_id_question";
-	static final String QUESTION_ANSWER_NUMERIC_ANSWER = "question_answer_id_numeric_answer";
+	static final String QUESTION_ANSWER_NUMERIC_ANSWER = "question_answer_numeric_answer";
 	static final String QUESTION_ANSWER_SCORE = "question_answer_score";
 
 	private DAO(Context context) {
@@ -123,7 +123,7 @@ public class DAO extends SQLiteOpenHelper {
 				+ QUESTION_ANSWER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
 				+ QUESTION_ANSWER_ANSWER + " INTEGER,"
 				+ QUESTION_ANSWER_QUESTION + " INTEGER,"
-				+ QUESTION_ANSWER_NUMERIC_ANSWER + " INTEGER,"
+				+ QUESTION_ANSWER_NUMERIC_ANSWER + " REAL,"
 				+ QUESTION_ANSWER_SCORE + " INTEGER"
 				+ ")");
 	}
