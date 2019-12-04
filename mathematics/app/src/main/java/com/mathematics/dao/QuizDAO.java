@@ -85,10 +85,10 @@ public class QuizDAO extends WithDAO {
 				lastQuestion = new MathQuestion(
 						c.getLong(c.getColumnIndex(QUESTION_ID)),
 						c.getString(c.getColumnIndex(QUESTION_TEXT)),
-						new NumericAnswer(c.getLong(c.getColumnIndex(QUESTION_OPTION)), null));
+						new NumericAnswer(c.getLong(c.getColumnIndex(QUESTION_NUMERIC_ANSWER)), null));
 				result.getQuestions().add(lastQuestion);
 			}
-			lastQuestion.setCorrectAnswer((new NumericAnswer(c.getLong(c.getColumnIndex(NUMERIC_ANSWER_ID)), Double.valueOf(c.getString(c.getColumnIndex(NUMERIC_ANSWER_TEXT))))));
+			lastQuestion.setCorrectAnswer((new NumericAnswer(c.getLong(c.getColumnIndex(NUMERIC_ANSWER_ID)), c.getDouble(c.getColumnIndex(NUMERIC_ANSWER_NUMBER)))));
 		}
 		c.close();
 		return result;
@@ -121,10 +121,10 @@ public class QuizDAO extends WithDAO {
 				lastQuestion = new MathQuestion(
 						c.getLong(c.getColumnIndex(QUESTION_ID)),
 						c.getString(c.getColumnIndex(QUESTION_TEXT)),
-						new NumericAnswer(c.getLong(c.getColumnIndex(QUESTION_OPTION)), null));
+						new NumericAnswer(c.getLong(c.getColumnIndex(QUESTION_NUMERIC_ANSWER)), c.getDouble(c.getColumnIndex(QUESTION_NUMERIC_ANSWER))));
 				lastQuiz.getQuestions().add(lastQuestion);
 			}
-			lastQuestion.setCorrectAnswer((new NumericAnswer(c.getLong(c.getColumnIndex(NUMERIC_ANSWER_ID)), Double.valueOf(c.getString(c.getColumnIndex(NUMERIC_ANSWER_TEXT))))));
+			lastQuestion.setCorrectAnswer((new NumericAnswer(c.getLong(c.getColumnIndex(NUMERIC_ANSWER_ID)), c.getDouble(c.getColumnIndex(NUMERIC_ANSWER_NUMBER)))));
 		}
 		c.close();
 		return result;

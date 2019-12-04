@@ -41,12 +41,12 @@ public class DAO extends SQLiteOpenHelper {
 	static final String QUESTION_ID = "id_question";
 	static final String QUESTION_TEXT = "question_text";
 	static final String QUESTION_QUIZ = "question_id_quiz";
-	static final String QUESTION_OPTION = "question_id_option";
+	static final String QUESTION_NUMERIC_ANSWER = "question_id_numeric_answer";
 
 	// Table NumericAnswer
 	static final String NUMERIC_ANSWER_TABLE = "numeric_answer";
 	static final String NUMERIC_ANSWER_ID = "id_numeric_answer";
-	static final String NUMERIC_ANSWER_TEXT = "numeric_answer_text";
+	static final String NUMERIC_ANSWER_NUMBER = "numeric_answer_number";
 	static final String NUMERIC_ANSWER_QUESTION = "numeric_answer_id_question";
 
 	// Table QuizAnswer
@@ -61,7 +61,7 @@ public class DAO extends SQLiteOpenHelper {
 	static final String QUESTION_ANSWER_ID = "id_question_answer";
 	static final String QUESTION_ANSWER_ANSWER = "question_answer_id_answer";
 	static final String QUESTION_ANSWER_QUESTION = "question_answer_id_question";
-	static final String QUESTION_ANSWER_OPTION = "question_answer_id_option";
+	static final String QUESTION_ANSWER_NUMERIC_ANSWER = "question_answer_id_numeric_answer";
 	static final String QUESTION_ANSWER_SCORE = "question_answer_score";
 
 	private DAO(Context context) {
@@ -103,12 +103,12 @@ public class DAO extends SQLiteOpenHelper {
 				+ QUESTION_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
 				+ QUESTION_TEXT + " TEXT,"
 				+ QUESTION_QUIZ + " INTEGER,"
-				+ QUESTION_OPTION + " INTEGER"
+				+ QUESTION_NUMERIC_ANSWER + " INTEGER"
 				+ ")");
 
 		db.execSQL("CREATE TABLE " + NUMERIC_ANSWER_TABLE + "("
 				+ NUMERIC_ANSWER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-				+ NUMERIC_ANSWER_TEXT + " TEXT,"
+				+ NUMERIC_ANSWER_NUMBER + " REAL,"
 				+ NUMERIC_ANSWER_QUESTION + " INTEGER"
 				+ ")");
 
@@ -123,7 +123,7 @@ public class DAO extends SQLiteOpenHelper {
 				+ QUESTION_ANSWER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
 				+ QUESTION_ANSWER_ANSWER + " INTEGER,"
 				+ QUESTION_ANSWER_QUESTION + " INTEGER,"
-				+ QUESTION_ANSWER_OPTION + " INTEGER,"
+				+ QUESTION_ANSWER_NUMERIC_ANSWER + " INTEGER,"
 				+ QUESTION_ANSWER_SCORE + " INTEGER"
 				+ ")");
 	}

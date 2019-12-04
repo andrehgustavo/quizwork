@@ -5,12 +5,11 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Configuration;
 import android.text.InputType;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.CheckedTextView;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,7 +24,7 @@ import com.quizwork.Question;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickListener, AdapterView.OnItemClickListener {
+public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickListener {
 	private List<Question> questions = new ArrayList<>();
 	private LayoutInflater inflater;
 	private TextView correctAnswerView;
@@ -76,13 +75,18 @@ public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickL
 				.setPositiveButton("Add", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
 						String text = (input.getText().toString());
+
 						if (question == null) {
 							questions.add(new MathQuestion(text));
 							Toast.makeText(inflater.getContext(), "Question added", Toast.LENGTH_LONG).show();
 						} else {
-							((MathQuestion) question).setCorrectAnswer((new NumericAnswer(Double.valueOf(text), question)));
+							NumericAnswer numericAnswer = new NumericAnswer(Double.valueOf(text), question);
+							Log.d("Math", "NumericAnswer: " + numericAnswer);
+							((MathQuestion) question).setCorrectAnswer((numericAnswer));
 							correctAnswerView.setText(text);
 							question.setCorrect(((MathQuestion) question).getCorrectAnswer());
+							numericAnswer.getQuestion().setCorrect(numericAnswer);
+							Log.d("Math", "getCorrect: " + numericAnswer.getQuestion().getCorrect());
 							Toast.makeText(inflater.getContext(), "NumericAnswer added", Toast.LENGTH_LONG).show();
 						}
 					}
@@ -90,15 +94,7 @@ public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickL
 				.show();
 	}
 
-	@Override
-	public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
-		NumericAnswer op = (NumericAnswer) parent.getItemAtPosition(i);
-		op.getQuestion().setCorrect(op);
-		for (int j = 0; j < parent.getChildCount(); ++j) {
-			((CheckedTextView) parent.getChildAt(j)).setChecked(false);
-		}
-		((CheckedTextView) view).setChecked(true);
-	}
+
 
 	@Override
 	public int getCount() {

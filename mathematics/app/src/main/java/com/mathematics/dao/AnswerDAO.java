@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.mathematics.model.NumericAnswer;
 import com.quizwork.QuestionAnswer;
 import com.quizwork.QuizAnswer;
 import com.quizwork.Quiz;
@@ -36,7 +37,7 @@ public class AnswerDAO extends WithDAO {
 			values.clear();
 			values.put(QUESTION_ANSWER_ANSWER, quizAnswer.getId());
 			values.put(QUESTION_ANSWER_QUESTION, aq.getQuestion().getId());
-			values.put(QUESTION_ANSWER_OPTION, aq.getAnswer().getId());
+			values.put(QUESTION_ANSWER_NUMERIC_ANSWER, ((NumericAnswer)aq.getAnswer()).getId());
 			values.put(QUESTION_ANSWER_SCORE, aq.getScore());
 			aq.setId(db.insert(QUESTION_ANSWER_TABLE, null, values));
 		}
