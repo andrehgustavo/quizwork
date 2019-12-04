@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.contest.dao.AnswerDAO;
 import com.contest.model.ObjectiveSubjectiveQuestionCalculator;
+import com.quizwork.QuestionAnswer;
 import com.quizwork.QuizAnswer;
 import com.quizwork.Quiz;
 import com.contest.model.PunishmentQuizCalculator;
@@ -51,11 +52,28 @@ public class AnswerService extends WithContext {
 		return AnswerDAO.getInstance(context).countByQuiz(quiz);
 	}
 
-	public List<QuizAnswer> findByQuiz(Quiz quiz) throws ValidationException {
-		if (quiz == null)
+	public List<QuizAnswer> findAllByQuiz(Quiz quiz) throws ValidationException {
+		if (quiz == null || quiz.getId() < 1)
 			throw new ValidationException("Invalid quiz");
 
-		return AnswerDAO.getInstance(context).findByQuiz(quiz);
+		return AnswerDAO.getInstance(context).findAllByQuiz(quiz);
+	}
+
+	public QuizAnswer findForCorrectionByQuizAnswer(QuizAnswer quizAnswer) throws ValidationException {
+		if (quizAnswer == null || quizAnswer.getId() < 1)
+			throw new ValidationException("Invalid QuizAnswer");
+
+		return AnswerDAO.getInstance(context).findForCorrectionByQuizAnswer(quizAnswer);
+	}
+
+	public QuizAnswer updateCorrection(QuizAnswer quizAnswer) throws ValidationException {
+		for (QuestionAnswer questionAnswer: quizAnswer.getQuestionAnswers())
+			if (questionAnswer.getScore() == null || questionAnswer.getScore() < 0 || questionAnswer.getScore() > 10)
+				throw new ValidationException("All questions must be corrected with values from 0 to 10");
+
+		quizAnswer.calculateScore(new PunishmentQuizCalculator(), new ObjectiveSubjectiveQuestionCalculator());
+
+		return AnswerDAO.getInstance(context).updateCorrection(quizAnswer);
 	}
 
 	public static AnswerService getInstance(Context context) {

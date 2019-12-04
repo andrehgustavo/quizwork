@@ -11,6 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f37de161-94e3-4b45-a8e5-22c34145686b" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mathematics.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../contest/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../contest/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/.idea/dbnavigator.xml" afterDir="false" />
@@ -29,6 +30,22 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../contest/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/controller/AnswerQuestionsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/controller/AnswerQuestionsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/controller/QuizReportActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/controller/QuizReportActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/dao/AnswerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/dao/AnswerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/dao/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/dao/QuizDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/dao/QuizDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/model/ObjectiveSubjectiveQuestionCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/model/ObjectiveSubjectiveQuestionCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/model/SubjectiveQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/model/SubjectiveQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/service/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/contest/service/AnswerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/quizwork/QuestionAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/quizwork/QuestionAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/quizwork/QuizAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/quizwork/QuizAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contest/app/src/main/java/com/quizwork/ValidationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../contest/app/src/main/java/com/quizwork/ValidationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> a6a10ea8ce10302c224968054d4f8671ded67bae
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +69,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/controller/CreateQuestionsAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="353">
               <caret line="92" column="31" lean-forward="true" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
+=======
+            <state relative-caret-position="151">
+              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="46" selection-end-column="141" />
+>>>>>>> a6a10ea8ce10302c224968054d4f8671ded67bae
               <folding>
                 <element signature="e#2977#3935#0" expanded="true" />
                 <element signature="e#3934#3935#0" expanded="true" />
@@ -97,8 +119,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="104">
               <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+=======
+            <state relative-caret-position="170">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+>>>>>>> a6a10ea8ce10302c224968054d4f8671ded67bae
             </state>
           </provider>
         </entry>
@@ -239,7 +266,9 @@
     <option name="width" value="767" />
     <option name="height" value="875" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -710,6 +739,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/model/MathQuestionCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="104">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
@@ -719,6 +749,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+=======
+        <state relative-caret-position="151">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="46" selection-end-column="141" />
+>>>>>>> a6a10ea8ce10302c224968054d4f8671ded67bae
           <folding>
             <element signature="e#293#294#0" expanded="true" />
             <element signature="e#316#317#0" expanded="true" />
@@ -739,6 +773,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mathematics/dao/QuizDAO.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="258">
           <caret line="132" column="5" selection-start-line="132" selection-start-column="5" selection-end-line="132" selection-end-column="5" />
         </state>
@@ -812,6 +847,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+=======
+        <state relative-caret-position="170">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+>>>>>>> a6a10ea8ce10302c224968054d4f8671ded67bae
         </state>
       </provider>
     </entry>

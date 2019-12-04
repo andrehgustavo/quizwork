@@ -54,6 +54,7 @@ public class AnswerQuestionsAdapter extends BaseAdapter implements View.OnClickL
 		} else {
 			EditText input = new EditText(inflater.getContext());
 			input.setLines(3);
+			input.setHint("Text answer");
 			input.setTag(questionAnswer);
 			input.setOnFocusChangeListener(this);
 			if (questionAnswer.getAnswer() != null)
@@ -61,25 +62,6 @@ public class AnswerQuestionsAdapter extends BaseAdapter implements View.OnClickL
 			v.addView(input);
 		}
 		return v;
-	}
-
-	@Override
-	public int getCount() {
-		return quizAnswer.getQuestionAnswers().size();
-	}
-
-	@Override
-	public Object getItem(int i) {
-		return quizAnswer.getQuestionAnswers().get(i);
-	}
-
-	@Override
-	public long getItemId(int i) {
-		return quizAnswer.getQuestionAnswers().get(i).getId();
-	}
-
-	QuizAnswer getQuizAnswer() {
-		return quizAnswer;
 	}
 
 	@Override
@@ -100,5 +82,24 @@ public class AnswerQuestionsAdapter extends BaseAdapter implements View.OnClickL
 			questionAnswer.setAnswer(
 					new Option(((EditText) view).getText().toString(), questionAnswer.getQuestion()));
 		}
+	}
+
+	@Override
+	public int getCount() {
+		return quizAnswer.getQuestionAnswers().size();
+	}
+
+	@Override
+	public Object getItem(int i) {
+		return quizAnswer.getQuestionAnswers().get(i);
+	}
+
+	@Override
+	public long getItemId(int i) {
+		return quizAnswer.getQuestionAnswers().get(i).getId();
+	}
+
+	QuizAnswer getQuizAnswer() {
+		return quizAnswer;
 	}
 }

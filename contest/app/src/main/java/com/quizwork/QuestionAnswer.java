@@ -7,6 +7,12 @@ public class QuestionAnswer {
 	private Answer answer;
 	private Integer score;
 
+	public QuestionAnswer(long id, Question question, Answer answer) {
+		this.id = id;
+		this.question = question;
+		this.answer = answer;
+	}
+
 	public QuestionAnswer(QuizAnswer quizAnswer, Question question) {
 		this.quizAnswer = quizAnswer;
 		this.question = question;
