@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,16 +37,13 @@ public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickL
 	public View getView(int i, View view, ViewGroup viewGroup) {
 		View v = inflater.inflate(R.layout.item_create_question, viewGroup, false);
 		((TextView) v.findViewById(R.id.create_question_text)).setText(questions.get(i).getText());
-		View add = v.findViewById(R.id.create_question_add_option);
-		add.setOnClickListener(this);
-		add.setTag(i);
 		View remove = v.findViewById(R.id.create_question_remove);
 		remove.setOnClickListener(this);
 		remove.setTag(i);
 		Question question = questions.get(i);
 		if (question.getCorrect() != null)
 			((TextView) v.findViewById(R.id.create_question_answer)).setText(((NumericAnswer) question.getCorrect()).getNumber().toString());
-
+			((TextView) v.findViewById(R.id.create_question_weight)).setText(((MathQuestion) question).getWeight().toString());
 		return v;
 	}
 
@@ -53,39 +51,53 @@ public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickL
 	public void onClick(View view) {
 		int i = (int) view.getTag();
 		switch (view.getId()) {
-			case R.id.create_question_add_option:
-				showDialog(questions.get(i));
-				break;
 			case R.id.create_question_remove:
 				questions.remove(i);
 				notifyDataSetChanged();
 		}
 	}
 
-	void showDialog(final Question question) {
-		final EditText input = new EditText(inflater.getContext());
-		input.setSingleLine(true);
-		if (question != null) {
-			input.setInputType(InputType.TYPE_CLASS_NUMBER);
-			input.setRawInputType(Configuration.KEYBOARD_12KEY);
-		}
+	void showDialog() {
+		LinearLayout layout = new LinearLayout(inflater.getContext());
+		layout.setOrientation(LinearLayout.VERTICAL);
+
+		final EditText inputQuestion = new EditText(inflater.getContext());
+		inputQuestion.setSingleLine(true);
+		inputQuestion.setHint("Add a Question.");
+		layout.addView(inputQuestion);
+
+		final EditText inputAnswer = new EditText(inflater.getContext());
+		inputAnswer.setSingleLine(true);
+		inputAnswer.setHint("Add a Answer.");
+		inputAnswer.setInputType(InputType.TYPE_CLASS_NUMBER);
+		inputAnswer.setRawInputType(Configuration.KEYBOARD_12KEY);
+		layout.addView(inputAnswer);
+
+		final EditText inputWeight = new EditText(inflater.getContext());
+		inputWeight.setSingleLine(true);
+		inputWeight.setHint("Add a question's weight.");
+		inputWeight.setInputType(InputType.TYPE_CLASS_NUMBER);
+		inputWeight.setRawInputType(Configuration.KEYBOARD_12KEY);
+		layout.addView(inputWeight);
+
 		new AlertDialog.Builder(inflater.getContext())
-				.setTitle("New " + (question == null ? "Question" : "NumericAnswer"))
-				.setView(input)
+				.setTitle("New Question")
+				.setView(layout)
 				.setPositiveButton("Add", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
-						String text = input.getText().toString().trim();
-						if (text.isEmpty())
+						String textQuestion = inputQuestion.getText().toString().trim();
+						String textAnswer = inputAnswer.getText().toString().trim();
+						String textWeight = inputWeight.getText().toString().trim();
+						if (textQuestion.isEmpty() || textAnswer.isEmpty() || textWeight.isEmpty())
 							return;
 
-						if (question == null) {
-							questions.add(new MathQuestion(text));
-							Toast.makeText(inflater.getContext(), "Question added", Toast.LENGTH_LONG).show();
-						} else {
-							question.setCorrect(new NumericAnswer(Double.valueOf(text), question));
+						else
+							questions.add(new MathQuestion(textQuestion));
+							questions.get(questions.size()-1).setCorrect(new NumericAnswer(Double.valueOf(textAnswer), questions.get(questions.size()-1)));
+							((MathQuestion)questions.get(questions.size()-1)).setWeight(Integer.parseInt(textWeight));
 							notifyDataSetChanged();
-							Toast.makeText(inflater.getContext(), "NumericAnswer added", Toast.LENGTH_LONG).show();
-						}
+							Toast.makeText(inflater.getContext(), "Question added", Toast.LENGTH_LONG).show();
+
 					}
 				})
 				.show();

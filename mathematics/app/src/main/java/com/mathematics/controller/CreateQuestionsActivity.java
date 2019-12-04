@@ -29,7 +29,7 @@ public class CreateQuestionsActivity extends AppCompatActivity {
 	}
 
 	public void addQuestion(View view) {
-		questionsAdapter.showDialog(null);
+		questionsAdapter.showDialog();
 	}
 
 	public void submit(View view) {

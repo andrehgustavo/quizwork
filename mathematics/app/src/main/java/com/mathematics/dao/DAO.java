@@ -41,6 +41,7 @@ public class DAO extends SQLiteOpenHelper {
 	static final String QUESTION_ID = "id_question";
 	static final String QUESTION_TEXT = "question_text";
 	static final String QUESTION_QUIZ = "question_id_quiz";
+	static final String QUESTION_WEIGHT = "question_weigth";
 	static final String QUESTION_NUMERIC_ANSWER = "question_id_numeric_answer";
 
 	// Table NumericAnswer
@@ -103,6 +104,7 @@ public class DAO extends SQLiteOpenHelper {
 				+ QUESTION_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
 				+ QUESTION_TEXT + " TEXT,"
 				+ QUESTION_QUIZ + " INTEGER,"
+				+ QUESTION_WEIGHT + " INTEGER,"
 				+ QUESTION_NUMERIC_ANSWER + " INTEGER"
 				+ ")");
 

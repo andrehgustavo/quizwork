@@ -15,7 +15,7 @@ public class MathQuestionCalculator implements QuestionCalculator {
 					+ " needs to be answered.");
 
 		if (((NumericAnswer) questionAnswer.getAnswer()).getNumber().equals(((NumericAnswer) questionAnswer.getQuestion().getCorrect()).getNumber()))
-			questionAnswer.setScore(1);
+			questionAnswer.setScore(((MathQuestion)questionAnswer.getQuestion()).getWeight());
 		else
 			questionAnswer.setScore(0);
 	}
