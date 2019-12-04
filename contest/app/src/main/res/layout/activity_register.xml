@@ -13,14 +13,13 @@
 		android:orientation="vertical"
 		android:padding="20dp">
 
-		<TextView
+		<ImageView
+			android:src="@drawable/contest"
 			android:layout_width="match_parent"
 			android:layout_height="0dp"
 			android:layout_weight="2"
-			android:gravity="center"
 			android:textAlignment="center"
-			android:textSize="50sp"
-			android:text="Contest"/>
+			android:gravity="center" />
 
 		<LinearLayout
 			android:layout_width="match_parent"
