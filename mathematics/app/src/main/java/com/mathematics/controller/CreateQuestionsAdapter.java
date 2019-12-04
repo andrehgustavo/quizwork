@@ -88,19 +88,25 @@ public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickL
 						String textQuestion = inputQuestion.getText().toString().trim();
 						String textAnswer = inputAnswer.getText().toString().trim();
 						String textWeight = inputWeight.getText().toString().trim();
-						if (textQuestion.isEmpty() || textAnswer.isEmpty() || textWeight.isEmpty())
-							return;
-
-						else
+						if (textQuestion.isEmpty() || textAnswer.isEmpty() || textWeight.isEmpty()) {
+							Toast.makeText(inflater.getContext(), "All fields must be filled.", Toast.LENGTH_LONG).show();
+						}else {
 							questions.add(new MathQuestion(textQuestion));
-							questions.get(questions.size()-1).setCorrect(new NumericAnswer(Double.valueOf(textAnswer), questions.get(questions.size()-1)));
-							((MathQuestion)questions.get(questions.size()-1)).setWeight(Integer.parseInt(textWeight));
+							questions.get(questions.size() - 1).setCorrect(new NumericAnswer(Double.valueOf(textAnswer), questions.get(questions.size() - 1)));
+							((MathQuestion) questions.get(questions.size() - 1)).setWeight(Integer.parseInt(textWeight));
 							notifyDataSetChanged();
 							Toast.makeText(inflater.getContext(), "Question added", Toast.LENGTH_LONG).show();
-
+						}
+					}
+				})
+				.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						return;
 					}
 				})
 				.show();
+
 	}
 
 
