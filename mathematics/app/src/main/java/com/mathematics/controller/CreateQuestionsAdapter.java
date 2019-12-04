@@ -43,7 +43,7 @@ public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickL
 		Question question = questions.get(i);
 		if (question.getCorrect() != null)
 			((TextView) v.findViewById(R.id.create_question_answer)).setText(((NumericAnswer) question.getCorrect()).getNumber().toString());
-
+			((TextView) v.findViewById(R.id.create_question_weight)).setText(((MathQuestion) question).getWeight().toString());
 		return v;
 	}
 
@@ -94,6 +94,7 @@ public class CreateQuestionsAdapter extends BaseAdapter implements View.OnClickL
 						else
 							questions.add(new MathQuestion(textQuestion));
 							questions.get(questions.size()-1).setCorrect(new NumericAnswer(Double.valueOf(textAnswer), questions.get(questions.size()-1)));
+							((MathQuestion)questions.get(questions.size()-1)).setWeight(Integer.parseInt(textWeight));
 							notifyDataSetChanged();
 							Toast.makeText(inflater.getContext(), "Question added", Toast.LENGTH_LONG).show();
 

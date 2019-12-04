@@ -27,17 +27,38 @@
 			android:src="@android:drawable/ic_menu_delete" />
 	</LinearLayout>
 	<LinearLayout
+		android:orientation="horizontal"
 		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Answer: "/>
+			<TextView
+				android:id="@+id/create_question_answer"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:hint="The answer"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="0dp"
 		android:layout_height="wrap_content"
+		android:layout_weight="1"
 		android:orientation="horizontal">
 		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="Answer:"/>
+			android:text="Weight: "/>
 		<TextView
-			android:id="@+id/create_question_answer"
+			android:id="@+id/create_question_weight"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:hint="The answer"/>
+	</LinearLayout>
 	</LinearLayout>
 </LinearLayout>

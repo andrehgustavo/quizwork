@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.mathematics.model.MathQuestion;
 import com.mathematics.model.NumericAnswer;
 import com.quizwork.Question;
 
@@ -22,6 +23,7 @@ public class QuestionDAO extends WithDAO {
 		ContentValues values = new ContentValues();
 		values.put(QUESTION_TEXT, question.getText());
 		values.put(QUESTION_QUIZ, question.getQuiz().getId());
+		values.put(QUESTION_WEIGHT, ((MathQuestion) question).getWeight());
 		question.setId(db.insert(QUESTION_TABLE, null, values));
 
 		NumericAnswer op = (NumericAnswer) question.getCorrect();

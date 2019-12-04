@@ -84,6 +84,7 @@ public class QuizDAO extends WithDAO {
 			lastQuestion = new MathQuestion(
 					c.getLong(c.getColumnIndex(QUESTION_ID)),
 					c.getString(c.getColumnIndex(QUESTION_TEXT)),
+					c.getInt(c.getColumnIndex(QUESTION_WEIGHT)),
 					new NumericAnswer(c.getLong(c.getColumnIndex(NUMERIC_ANSWER_ID)), c.getDouble(c.getColumnIndex(NUMERIC_ANSWER_NUMBER))));
 			result.getQuestions().add(lastQuestion);
 		}
@@ -117,6 +118,7 @@ public class QuizDAO extends WithDAO {
 			lastQuestion = new MathQuestion(
 					c.getLong(c.getColumnIndex(QUESTION_ID)),
 					c.getString(c.getColumnIndex(QUESTION_TEXT)),
+					c.getInt(c.getColumnIndex(QUESTION_WEIGHT)),
 					new NumericAnswer(c.getLong(c.getColumnIndex(NUMERIC_ANSWER_ID)), c.getDouble(c.getColumnIndex(NUMERIC_ANSWER_NUMBER))));
 			lastQuiz.getQuestions().add(lastQuestion);
 		}
