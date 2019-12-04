@@ -20,23 +20,24 @@
 			android:layout_gravity="center" />
 
 		<ImageButton
-			android:id="@+id/create_question_add_option"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:tooltipText="Add Option"
-			android:src="@android:drawable/ic_menu_add" />
-
-		<ImageButton
 			android:id="@+id/create_question_remove"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:tooltipText="Remove Question"
 			android:src="@android:drawable/ic_menu_delete" />
 	</LinearLayout>
-
-	<TextView
-		android:id="@+id/create_question_answer"
+	<LinearLayout
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:hint="The answer"/>
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Answer:"/>
+		<TextView
+			android:id="@+id/create_question_answer"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:hint="The answer"/>
+	</LinearLayout>
 </LinearLayout>
