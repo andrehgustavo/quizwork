@@ -11,6 +11,13 @@ public class QuizAnswer implements Serializable {
 	private List<QuestionAnswer> questionAnswers;
 	private Integer score;
 
+	public QuizAnswer(long id, String quizName) {
+		this.id = id;
+		this.quiz = new Quiz();
+		this.quiz.setName(quizName);
+		this.questionAnswers = new ArrayList<>();
+	}
+
 	public QuizAnswer(Quiz quiz, User creator) {
 		this.quiz = quiz;
 		this.creator = creator;

@@ -88,8 +88,6 @@ public class QuizDAO extends WithDAO {
 				lastQuestion = new SubjectiveQuestion(
 						c.getLong(c.getColumnIndex(QUESTION_ID)),
 						c.getString(c.getColumnIndex(QUESTION_TEXT)));
-				if (!c.isNull(c.getColumnIndex(QUESTION_SCORE)))
-					((SubjectiveQuestion) lastQuestion).setScore(c.getInt(c.getColumnIndex(QUESTION_SCORE)));
 				result.getQuestions().add(lastQuestion);
 			} else {
 				if (lastQuestion.getId() != c.getLong(c.getColumnIndex(QUESTION_ID))) {
@@ -133,8 +131,6 @@ public class QuizDAO extends WithDAO {
 				lastQuestion = new SubjectiveQuestion(
 						c.getLong(c.getColumnIndex(QUESTION_ID)),
 						c.getString(c.getColumnIndex(QUESTION_TEXT)));
-				if (!c.isNull(c.getColumnIndex(QUESTION_SCORE)))
-					((SubjectiveQuestion) lastQuestion).setScore(c.getInt(c.getColumnIndex(QUESTION_SCORE)));
 				lastQuiz.getQuestions().add(lastQuestion);
 			} else {
 				if (lastQuestion.getId() != c.getLong(c.getColumnIndex(QUESTION_ID))) {

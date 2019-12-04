@@ -13,15 +13,16 @@
 		android:supportsRtl="true"
 		android:theme="@style/AppTheme"
 		tools:ignore="GoogleAppIndexingWarning">
-		<activity android:name="com.contest.controller.QuizReportActivity" />
-		<activity android:name="com.contest.controller.MyReportActivity" />
-		<activity android:name="com.contest.controller.SearchActivity" />
-		<activity android:name="com.contest.controller.CreateQuestionsActivity" />
-		<activity android:name="com.contest.controller.NewQuizActivity" />
-		<activity android:name="com.contest.controller.RegisterActivity" />
-		<activity android:name="com.contest.controller.HomeActivity" />
-		<activity android:name="com.contest.controller.AnswerActivity" />
-		<activity android:name="com.contest.controller.LoginActivity">
+		<activity android:name=".controller.CorrectionActivity" />
+		<activity android:name=".controller.QuizReportActivity" />
+		<activity android:name=".controller.MyReportActivity" />
+		<activity android:name=".controller.SearchActivity" />
+		<activity android:name=".controller.CreateQuestionsActivity" />
+		<activity android:name=".controller.NewQuizActivity" />
+		<activity android:name=".controller.RegisterActivity" />
+		<activity android:name=".controller.HomeActivity" />
+		<activity android:name=".controller.AnswerActivity" />
+		<activity android:name=".controller.LoginActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 

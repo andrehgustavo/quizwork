@@ -42,7 +42,6 @@ public class DAO extends SQLiteOpenHelper {
 	static final String QUESTION_TEXT = "question_text";
 	static final String QUESTION_QUIZ = "question_id_quiz";
 	static final String QUESTION_OPTION = "question_id_option";
-	static final String QUESTION_SCORE = "question_score";
 
 	// Table Option
 	static final String OPTION_TABLE = "option";
@@ -104,8 +103,7 @@ public class DAO extends SQLiteOpenHelper {
 				+ QUESTION_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
 				+ QUESTION_TEXT + " TEXT,"
 				+ QUESTION_QUIZ + " INTEGER,"
-				+ QUESTION_OPTION + " INTEGER,"
-				+ QUESTION_SCORE + " INTEGER"
+				+ QUESTION_OPTION + " INTEGER"
 				+ ")");
 
 		db.execSQL("CREATE TABLE " + OPTION_TABLE + "("

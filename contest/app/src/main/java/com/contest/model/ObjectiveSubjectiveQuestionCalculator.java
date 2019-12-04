@@ -14,9 +14,7 @@ public class ObjectiveSubjectiveQuestionCalculator implements QuestionCalculator
 					+ (questionAnswer.getQuizAnswer().getQuestionAnswers().indexOf(questionAnswer)+ 1)
 					+ " needs to be answered.");
 
-		if (questionAnswer.getQuestion() instanceof SubjectiveQuestion) {
-			questionAnswer.setScore(((SubjectiveQuestion) questionAnswer.getQuestion()).getScore());
-		} else {
+		if (questionAnswer.getQuestion() instanceof ObjectiveQuestion) {
 			if (questionAnswer.getAnswer().getId() == questionAnswer.getQuestion().getCorrect().getId())
 				questionAnswer.setScore(10);
 			else
