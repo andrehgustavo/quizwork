@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 public class MathQuestion extends Question implements Serializable {
 	private Integer weight;
-	public MathQuestion() {}
 
 	public MathQuestion(String text) {
 		this.text = text;
@@ -32,6 +31,6 @@ public class MathQuestion extends Question implements Serializable {
 	@Override
 	public void validate() throws ValidationException {
 		if (correct == null)
-			throw new ValidationException("You need answer all the questions.");
+			throw new ValidationException("You need answer all the questions");
 	}
 }

@@ -4,12 +4,12 @@ import com.quizwork.QuestionAnswer;
 import com.quizwork.QuizAnswer;
 import com.quizwork.QuizCalculator;
 
-public class SummationQuizCalculator implements QuizCalculator {
+public class WeightedAverageQuizCalculator implements QuizCalculator {
 	@Override
 	public void calculate(QuizAnswer quizAnswer) {
 		int score = 0;
 		for (QuestionAnswer questionAnswer: quizAnswer.getQuestionAnswers())
 			score += questionAnswer.getScore();
-		quizAnswer.setScore(score);
+		quizAnswer.setScore(score / quizAnswer.getQuestionAnswers().size());
 	}
 }

@@ -7,7 +7,7 @@ import com.mathematics.dao.AnswerDAO;
 import com.mathematics.model.MathQuestionCalculator;
 import com.quizwork.QuizAnswer;
 import com.quizwork.Quiz;
-import com.mathematics.model.SummationQuizCalculator;
+import com.mathematics.model.WeightedAverageQuizCalculator;
 import com.quizwork.User;
 import com.quizwork.ValidationException;
 import com.mathematics.model.WithContext;
@@ -32,7 +32,7 @@ public class AnswerService extends WithContext {
 		if (quizAnswer.getQuestionAnswers().get(0).getQuestion() == null)
 			throw new ValidationException("Question is required in QuestionAnswer");
 
-		quizAnswer.calculateScore(new SummationQuizCalculator(), new MathQuestionCalculator());
+		quizAnswer.calculateScore(new WeightedAverageQuizCalculator(), new MathQuestionCalculator());
 
 		return AnswerDAO.getInstance(context).create(quizAnswer);
 	}
